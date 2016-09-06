@@ -13,7 +13,8 @@ $(document).ready(function(){
 		// Transform user input to lowercase
 		cityName = cityName.toLowerCase();
 
-		// Remove any existing classes from the body element so user can continue to input values
+		// Remove any existing classes from the body element generated from previous user input
+		// Remove any existing error messages generated from previous user input
 		var cityClass = $("body").attr("class");
 		$("body").removeClass();
 		$(".error-message").empty();
